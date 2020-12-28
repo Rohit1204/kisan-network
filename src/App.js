@@ -2,6 +2,7 @@ import './App.css';
 import PrimarySearchbar from "../src/components/header/index"
 import Showcontacts from "../src/components/show-contacts/HorizontalForm"
 import { Switch, Route } from 'react-router-dom'
+import NoMatch from "../src/components/NoMatch/index"
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
         <Route exact path='/' component={Showcontacts}/>
         {/* <Route  path='/User-Contact/:id' component={UserContact}/>
         <Route  path='/otp-sent/:id' component={OtpSend}/> */}
-        {/* <Route component={NoMatch}/> */}
+        <Route component={NoMatch}/>
       </Switch>
     </div>
   );
